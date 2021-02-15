@@ -1,0 +1,107 @@
+
+-- Tech to use:
+
+Jooq, jooq tests
+Flyway
+TestContainers
+Money type
+@embedded I @embeddable usage
+
+
+
+
+
+-- Create REST controllers
+
+getAllCarModels
+getCarModelById
+getCarModelsByNamePattern (Mersedes, BMW)
+addNewCarModel
+UpdateCarModelById
+DeleteCarModelById
+getCarModelsPage
+
+
+getAllCars
+getCarById
+getCarsByOwnerEmail
+getCarByVin
+getCarByStateNumber
+getCarsByCarModelNamePattern
+AddNewCar
+UpdateCarById
+DeleteCarById
+getCarsPage
+
+
+getAllPenalties
+getPenaltyById
+getPenaltyByInspectorEmail
+getPenaltyByPenaltyType
+getPenaltyByAmountInterval
+getPenaltyByCarStateNumber
+AddNewPenalty
+UpdatePenaltyById
+DeletePenaltyById
+getPenaltiesPage
+
+getAllOwners
+getOwnersById
+getOwnerByEmail
+getOwnersByNameAndSurname
+getOwnersByCarStateNumber
+AddNewOwners
+UpdateOwnersById
+DeleteOwnersById
+getOwnersPage
+
+getPenaltyTypes
+addPenaltyType
+editPenaltyType
+deletePenaltyType
+
+getAllInspectors
+getInspectorById
+getInspectorByNameAndSurname
+getInspectorByEmail
+getInspectorsPage
+editInspectorData
+addNewInspector
+deleteInspectorById
+
+------------------------------------------------------------------------------------------------------------------------
+
+penaltiesService
+ownersService
+penaltyTypesService
+inspectorService
+carTypeService
+carService
+
+------------------------------------------------------------------------------------------------------------------------
+
+penaltiesRepository
+ownersRepository
+penaltyTypesRepository
+inspectorRepository
+carTypeRepository
+carRepository
+
+------------------------------------------------------------------------------------------------------------------------
+
+Docker
+Usage of Postgres
+Prepare curl scripts
+Cors setup
+
+GraphQL (leangen) usage ?
+
+
+
+
+
+
+
+
+
+

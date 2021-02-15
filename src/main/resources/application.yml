@@ -1,0 +1,33 @@
+application:
+  developer: Nizami Islamovs
+  version: v 1.0.0
+  deploymentdate: 2018-09-11 21:15:29
+  support.email: nizamiislamovs@gmail.com
+  description: Cars
+  title: Cars REST API JOOQ CRUD MEGA APP
+
+management:
+  endpoints:
+    web:
+      base-path: "/actuator"
+      exposure:
+        include: "*"
+      cors:
+        allowed-methods: GET, POST, PUT, DELETE, OPTIONS
+        max-age: 3600s
+#        allowed-origins: '*'
+        allow-credentials: true
+
+spring:
+  datasource:
+    platform: h2
+    url: jdbc:h2:mem:test;MODE=MySQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=TRUE
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+    hikari:
+      maximum-pool-size: 10
+  h2:
+    console:
+      enabled: true
+      path: /h2
