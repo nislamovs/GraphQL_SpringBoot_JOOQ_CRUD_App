@@ -2,5 +2,5 @@ CREATE TABLE penalty_types (
   id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 
   name VARCHAR NOT NULL,
-  description VARCHAR NOT NULL
+  description VARCHAR
 );

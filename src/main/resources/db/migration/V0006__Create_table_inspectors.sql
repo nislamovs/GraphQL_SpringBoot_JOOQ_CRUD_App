@@ -4,9 +4,8 @@ CREATE TABLE inspectors (
   name VARCHAR NOT NULL,
   surname VARCHAR NOT NULL,
   phone VARCHAR NOT NULL,
-  email VARCHAR NOT NULL,
   position VARCHAR NOT NULL,
 
-  created_date timestamp NOT NULL,
-  last_modified_date timestamp NOT NULL
+  created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  last_modified_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );

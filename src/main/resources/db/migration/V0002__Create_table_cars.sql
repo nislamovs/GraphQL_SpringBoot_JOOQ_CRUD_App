@@ -8,10 +8,7 @@ CREATE TABLE cars (
 
   additionalInfo VARCHAR,
 
-  created_date timestamp NOT NULL,
-  last_modified_date timestamp NOT NULL,
-
-  FOREIGN KEY (carModelId) references car_models(id),
-  FOREIGN KEY (ownerId) references owners(id)
+  created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  last_modified_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 
 );
